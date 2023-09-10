@@ -3,9 +3,7 @@ const currentTime = document.querySelector("#current-time");
 
 const now = new Date();
 const day = String(now.getUTCDay());
-const hours = String(now.getUTCHours()).padStart(2, "0");
-const minutes = String(now.getUTCMinutes()).padStart(2, "0");
-const seconds = String(now.getUTCSeconds()).padStart(2, "0");
+const currentUTCTimeInMilliseconds = String(now.getTime());
 const daysOfWeek = [
   "Sunday",
   "Monday",
@@ -17,4 +15,4 @@ const daysOfWeek = [
 ];
 
 currentDay.textContent = daysOfWeek[day];
-currentTime.textContent = `${hours}:${minutes}:${seconds} UTC`;
+currentTime.textContent = `${currentUTCTimeInMilliseconds}`;

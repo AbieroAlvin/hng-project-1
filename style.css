@@ -9,3 +9,151 @@ img {
   object-fit: cover;
   height: 250px;
 }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f7ece1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  font-size: 1.25rem;
+  background-color: #242038;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 600;
+  color: #f7ece1;
+}
+
+#main {
+  background: #cac4ce;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+  width: 60%;
+  height: 60%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+  color: #242038;
+}
+
+.slack-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.slack-name span {
+  color: #725ac1;
+  font-size: 1rem;
+}
+
+.img {
+  height: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.img img {
+  border-radius: 1rem;
+  border-width: 4px;
+  border-color: #725ac1;
+}
+
+.current-day {
+  font-weight: 600;
+  padding-left: 0.75rem;
+}
+
+#current-day {
+  color: #725ac1;
+  font-size: 1rem;
+}
+
+.current-time {
+  font-weight: 600;
+  padding-left: 0.75rem;
+}
+
+#current-time {
+  color: #725ac1;
+  font-size: 1rem;
+}
+
+.my-track {
+  font-weight: 600;
+  padding-left: 0.75rem;
+}
+
+.my-track span {
+  color: #725ac1;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+footer {
+  background-color: #242038;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 600;
+  color: #f7ece1;
+}
+.git-link {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.git-link:hover {
+  color: aqua;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: 1.875rem;
+  }
+
+  .slack-name {
+    font-size: 1.25rem;
+  }
+
+  .img {
+    height: 60%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .img img {
+    border-radius: 0.75rem;
+  }
+
+  .current-day {
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .current-time {
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .my-track {
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .git-link {
+    font-size: 1.25rem;
+  }
+}

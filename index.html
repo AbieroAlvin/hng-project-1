@@ -3,61 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./style.css" />
     <title>Personal Data Showcase</title>
   </head>
-  <body
-    class="w-full h-screen bg-[#f7ece1] flex items-center flex-col justify-between"
-  >
-    <header
-      class="md:text-3xl text-xl bg-[#242038] w-full h-[80px] text-center p-6 font-semibold text-[#f7ece1]"
-    >
+  <body>
+    <header>
       <h1>Personal Data Showcase</h1>
     </header>
-    <main
-      class="bg-[#cac4ce] px-6 py-8 m-4 w-[60%] h-[60%] shadow-xl rounded-lg flex flex-col gap-2 max-w-[500px] text-[#242038]"
-    >
-      <div
-        data-testid="slackUserName"
-        class="text-center md:text-xl font-semibold"
-      >
-        Slack Name: <span class="text-[#725ac1] text-[1rem]">Alvin Abiero</span>
+    <main id="main">
+      <div class="slack-name">
+        Slack Name: <span data-testid="slackUserName">Alvin Abiero</span>
       </div>
-      <div
-        data-testid="slackDisplayImage"
-        class="md:h-[60%] h-[50%] md:my-2 my-4 flex justify-center"
-      >
+      <div class="img">
         <img
+          data-testid="slackDisplayImage"
           src="/img/Profile-1.jpg"
           alt="Alvin Abiero"
-          class="rounded-2xl md:rounded-xl border-4"
         />
       </div>
-      <div
-        data-testid="currentDayOfTheWeek"
-        class="md:pl-6 pl-3 md:text-xl font-semibold"
-      >
+      <div class="current-day">
         Current Day:
-        <span id="current-day" class="text-[#725ac1] text-[1rem]"></span>
+        <span data-testid="currentDayOfTheWeek" id="current-day"></span>
       </div>
-      <div
-        data-testid="currentUTCTime"
-        class="md:pl-6 pl-3 md:text-xl font-semibold"
-      >
-        Current Time :
-        <span id="current-time" class="text-[#725ac1] text-[1rem]"></span
+      <div class="current-time">
+        Current UTC Time :
+        <span id="current-time" data-testid="currentUTCTime"></span
       ></div>
-      <div data-testid="myTrack" class="md:pl-6 pl-3 md:text-xl font-semibold"
-        >My Track: <span class="text-[#725ac1] pl-2 text-[1rem]">Frontend</span>
+      <div class="my-track"
+        >My Track: <span data-testid="myTrack">Frontend</span>
       </div>
     </main>
-    <footer
-      class="bg-[#242038] w-full h-[80px] text-center p-6 font-semibold text-[#f7ece1]"
-    >
+    <footer>
       <a
+        data-testid="githubURL"
         href="https://github.com/AbieroAlvin/hng-project-1.git"
-        class="md:text-xl text-sm cursor-pointer hover:text-2xl hover:text-blue-400"
+        class="git-link"
         >Github Link</a
       >
     </footer>
